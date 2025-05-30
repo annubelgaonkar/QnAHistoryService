@@ -21,7 +21,7 @@ public class HistoryService {
     }
     public History saveHistory(HistoryRequestDTO historyRequestDTO) {
         History history = new History();
-        history.setUserAnswer(historyRequestDTO.getUsername());
+        history.setUsername(historyRequestDTO.getUsername());
         history.setTopic(historyRequestDTO.getTopic());
         history.setQuestion(historyRequestDTO.getQuestion());
         history.setUserAnswer(historyRequestDTO.getUserAnswer());

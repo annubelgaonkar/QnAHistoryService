@@ -26,7 +26,7 @@ public class HistoryController {
         return new ResponseEntity<>(historyService.saveHistory(historyRequestDTO), HttpStatus.OK);
     }
 
-    @GetMapping
+    @GetMapping("/{username}")
     public ResponseEntity<List<History>> getUserHistory(@PathVariable String username) {
         return ResponseEntity.ok(historyService.getUserHistory(username));
     }
